@@ -1,0 +1,157 @@
+{
+    "combat_classes": {
+        "warrior": {
+            "idle": {
+                "sprite_sheet": "assets/images/sprites/warrior/warrior_idle.png",
+                "frame_count": 4,
+                "frame_width": 86,
+                "frame_height": 71,
+                "fps": 4,
+                "loop": true
+            },
+            "attack": {
+                "sprite_sheet": "assets/images/sprites/warrior/warrior_attack.png",
+                "frame_count": 16,
+                "frame_width": 168,
+                "frame_height": 154,
+                "fps": 8,
+                "loop": false
+            },
+            "cast": {
+                "sprite_sheet": "assets/images/sprites/warrior/warrior_cast.png",
+                "frame_count": 4,
+                "frame_width": 78,
+                "frame_height": 74,
+                "fps": 4,
+                "loop": false
+            },
+            "defend": {
+                "sprite_sheet": "assets/images/sprites/warrior/warrior_defend.png",
+                "frame_count": 4,
+                "frame_width": 76,
+                "frame_height": 68,
+                "fps": 4,
+                "loop": false
+            },
+            "die": {
+                "sprite_sheet": "assets/images/sprites/warrior_die.png",
+                "frame_count": 1,
+                "frame_width": 81,
+                "frame_height": 52,
+                "fps": 1,
+                "loop": true
+            }
+        },
+        "mage": {
+            "idle": {
+                "sprite_sheet": "assets/images/sprites/mage/mage_idle.png",
+                "frame_count": 4,
+                "frame_width": 89,
+                "frame_height": 77,
+                "fps": 4,
+                "loop": true
+            },
+            "attack": {
+                "sprite_sheet": "assets/images/sprites/mage/mage_attack.png",
+                "frame_count": 12,
+                "frame_width": 236,
+                "frame_height": 124,
+                "fps": 6,
+                "loop": false
+            },
+            "cast": {
+                "sprite_sheet": "assets/images/sprites/mage/mage_cast.png",
+                "frame_count": 4,
+                "frame_width": 100,
+                "frame_height": 109,
+                "fps": 4,
+                "loop": false
+            },
+            "defend": {
+                "sprite_sheet": "assets/images/sprites/mage/mage_defend.png",
+                "frame_count": 4,
+                "frame_width": 89,
+                "frame_height": 73,
+                "fps": 4,
+                "loop": false
+            },
+            "die": {
+                "sprite_sheet": "assets/images/sprites/mage/mage_die.png",
+                "frame_count": 1,
+                "frame_width": 119,
+                "frame_height": 65,
+                "fps": 1,
+                "loop": true
+            }
+        },
+        "priest": {
+            "idle": {
+                "sprite_sheet": "assets/images/sprites/priest/priest_idle.png",
+                "frame_count": 4,
+                "frame_width": 58,
+                "frame_height": 70,
+                "fps": 4,
+                "loop": true
+            },
+            "attack": {
+                "sprite_sheet": "assets/images/sprites/priest/priest_attack.png",
+                "frame_count": 16,
+                "frame_width": 114,
+                "frame_height": 88,
+                "fps": 8,
+                "loop": false
+            },
+            "cast": {
+                "sprite_sheet": "assets/images/sprites/priest/priest_cast.png",
+                "frame_count": 4,
+                "frame_width": 61,
+                "frame_height": 90,
+                "fps": 4,
+                "loop": false
+            },
+            "defend": {
+                "sprite_sheet": "assets/images/sprites/priest/priest_defend.png",
+                "frame_count": 4,
+                "frame_width": 59,
+                "frame_height": 73,
+                "fps": 4,
+                "loop": false
+            },
+            "die": {
+                "sprite_sheet": "assets/images/sprites/priest/priest_die.png",
+                "frame_count": 1,
+                "frame_width": 80,
+                "frame_height": 43,
+                "fps": 1,
+                "loop": true
+            }
+        }
+    },
+    "explorer_class": {
+        "explorer": {
+            "idle": {
+                "sprite_sheet": "assets/images/sprites/explorer/explorer_sprite_sheet.png",
+                "frame_count": 1,
+                "frame_width": 59,
+                "frame_height": 58,
+                "fps": 5,
+                "loop": true,
+                "row": 4
+            },
+            "walk": {
+                "sprite_sheet": "assets/images/sprites/explorer/explorer_sprite_sheet.png",
+                "frame_count": 3,
+                "frame_width": 59,
+                "frame_height": 58,
+                "fps": 5,
+                "loop": true,
+                "directions": {
+                    "down": {"row": 0},
+                    "up": {"row": 1},
+                    "left": {"row": 2},
+                    "right": {"row": 3}
+                }
+            }
+        }
+    }
+}
