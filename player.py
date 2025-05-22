@@ -6,7 +6,7 @@ import pygame
 import random
 from enum import Enum
 from magic import Magic
-from animator import Animator, PlayerAnimator
+from animator import PlayerAnimator
 
 # Black magic
 fire = Magic('Fire', 5, 7, 'black')

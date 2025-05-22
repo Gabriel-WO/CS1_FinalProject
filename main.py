@@ -2,6 +2,14 @@
 __author__ = 'Gabriel Whangbo-Olvera'
 __version__ = '5.22.2025'
 
+# Flint links
+#https://app.flintk12.com/activities/pygame-debug-le-1fe068/sessions/94a3f80b-c51b-403a-9a79-47379bd4b2da
+#https://app.flintk12.com/activities/pygame-debug-le-1fe068/sessions/e0bbbae0-a0d9-428c-9f15-7d88409f654b
+#https://app.flintk12.com/activities/pygame-debug-le-1fe068/sessions/dee1a700-6bf3-4171-98ca-ed8c2d35aa5e
+#https://app.flintk12.com/activities/pygame-debug-le-1fe068/sessions/205e896e-4ad9-428e-b960-767b252520bc
+#https://app.flintk12.com/activities/pygame-debug-le-1fe068/sessions/430240b4-0a4c-40e3-bf19-d1efe0d9fc1f
+#https://app.flintk12.com/activities/pygame-debug-le-1fe068/sessions/b2ead3e3-7270-4935-acb9-eff0fe30819d
+
 import pygame
 import sys
 from magic import Magic
