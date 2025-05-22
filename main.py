@@ -74,6 +74,7 @@ class TurnBasedRPG:
         self.reset_game()
         self.clock = pygame.time.Clock()
         self.win_count = 0
+        self.is_final_boss = False
 
     # Reset game
     def reset_game(self):
@@ -99,6 +100,7 @@ class TurnBasedRPG:
 
         # Win counter
         self.win_count = 0
+        self.is_final_boss = False
 
     # Exploration handling
     def handle_exploration_input(self, event):
@@ -155,6 +157,7 @@ class TurnBasedRPG:
         # Final boss if already in dungeon
         if room_name == 'dungeon' and self.win_count >= 10:
             self.enemy_party = EnemyParty().generate_final_boss()
+            self.is_final_boss = True
         # Anything else
         else:
             self.enemy_party = EnemyParty().generate_random_party(encounter_type)
@@ -192,9 +195,13 @@ class TurnBasedRPG:
 
     # Win battle
     def win_battle(self):
-        self.game_state = STATE_WIN
-        self.music_manager.play_song(MUSIC['victory'])
-        self.win_count += 1
+        if self.is_final_boss:
+            self.game_state = STATE_FINISHED
+            self.music_manager.play_song(MUSIC['victory'])
+        else:
+            self.game_state = STATE_WIN
+            self.music_manager.play_song(MUSIC['victory'])
+            self.win_count += 1
 
     # Draw text
     def draw_text(self, font, text, x, y, color=None):
@@ -210,7 +217,7 @@ class TurnBasedRPG:
             enemies_defeated.append(name)
         enemies_defeated_text = ', '.join(enemies_defeated)
         self.draw_text(None, 'YOU WIN!', SCREEN_WIDTH // 2 - 50, 100, (255, 255, 255))
-        self.draw_text(None, f'Enemies defeated: {enemies_defeated_text}', 50, SCREEN_HEIGHT - 300, (255, 255, 255))
+        #self.draw_text(None, f'Enemies defeated: {enemies_defeated_text}', 50, SCREEN_HEIGHT - 300, (255, 255, 255))
         self.draw_button('Continue', SCREEN_WIDTH // 2 - 50, SCREEN_HEIGHT - 100, 100, 50, BUTTON_COLOR)
 
     # Handle win state
@@ -845,7 +852,7 @@ class TurnBasedRPG:
     # Draw finished state
     def draw_finished_state(self):
         self.screen.fill((0, 0, 0))
-        self.draw_text(None, 'YOU FINISHED!', SCREEN_WIDTH // 2 - 50, 100, (255, 255, 255))
+        self.draw_text(None, 'YOU FINISHED!', SCREEN_WIDTH // 2 - 100, 100, (255, 255, 255))
         self.draw_button('Play Again', SCREEN_WIDTH // 2 - 50, SCREEN_HEIGHT - 100, 100, 50, BUTTON_COLOR)
 
     # Handle finished state clicks

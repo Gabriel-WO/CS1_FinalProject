@@ -31,7 +31,7 @@ PLAYER_TYPES = {
         'defense': 20,
         'spirit': 10,
         'luck': 3,
-        'magic': [fire, thunder],
+        'magic': [fire, cure],
     },
     'priest': {
         'max_hp': 100,
@@ -57,7 +57,7 @@ PLAYER_TYPES = {
         'defense': 15,
         'spirit': 15,
         'luck': 3,
-        'magic': [fire, thunder, blizzard, cure],
+        'magic': [fire, thunder, blizzard],
     }
 }
 
