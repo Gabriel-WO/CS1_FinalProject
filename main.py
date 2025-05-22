@@ -210,12 +210,12 @@ class TurnBasedRPG:
     # Draw win state
     def draw_win_state(self):
         self.screen.fill((0, 0, 0))
-        enemies = self.enemy_party.members
+        '''enemies = self.enemy_party.members
         enemies_defeated = []
         for enemy in enemies:
             name = enemy.name
             enemies_defeated.append(name)
-        enemies_defeated_text = ', '.join(enemies_defeated)
+        enemies_defeated_text = ', '.join(enemies_defeated)'''
         self.draw_text(None, 'YOU WIN!', SCREEN_WIDTH // 2 - 50, 100, (255, 255, 255))
         #self.draw_text(None, f'Enemies defeated: {enemies_defeated_text}', 50, SCREEN_HEIGHT - 300, (255, 255, 255))
         self.draw_button('Continue', SCREEN_WIDTH // 2 - 50, SCREEN_HEIGHT - 100, 100, 50, BUTTON_COLOR)

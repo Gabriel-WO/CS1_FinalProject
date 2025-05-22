@@ -61,7 +61,6 @@ PLAYER_TYPES = {
     }
 }
 
-
 # Player types
 class PlayerTypes(Enum):
     WARRIOR = 0

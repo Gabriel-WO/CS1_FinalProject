@@ -3,7 +3,6 @@ __author__ = 'Gabriel Whangbo-Olvera'
 __version__ = '5.22.2025'
 
 import pygame
-import os
 import random
 from enum import Enum
 from magic import Magic
